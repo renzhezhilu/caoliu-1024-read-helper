@@ -127,7 +127,7 @@ function htmlLoading() {
         <div class="_talk" id="_talk">
             <div class="banner" id="_talk_top" style="padding-left:5px;">
                 <a href="../../../">
-                    <font size="7" color="white"><b style="font-weight:300;">回帖(451)</b></font>
+                    <font size="7" color="white"><b style="font-weight:300;">回帖</b></font>
                 </a>
             </div>
 
@@ -148,6 +148,7 @@ function htmlEdit() {
     // const talk = document.createElement('div')
     // talk.className = '_talk'
     let talk_html = ''
+    let count_li = 1
     page_data.map(item => {
         let li_html = ''
         item.map(p => {
@@ -156,8 +157,13 @@ function htmlEdit() {
                     <div class="pic">${p.name[0]}</div>
                     <div class="text">
                         <div class="name">
-                            ${p.name}
-                            <span class="time">${p.time}</span>
+                            <div>
+                                ${p.name}
+                                <span class="time">${p.time}</span>
+                            </div>
+                            <div class="lou" >
+                                <a href="javascript:$('._talk').animate({ scrollTop: 0 }, 500);">${count_li}楼</a>
+                            </div>
                         </div>
                         <div>
                             ${p.con}
@@ -165,18 +171,17 @@ function htmlEdit() {
                     </div>
                 </div>
             `
+            count_li++
         })
         talk_html += li_html
     })
-    console.log(talk_html);
-    
 
     document.querySelector('body').insertAdjacentHTML('beforeend', `
         <div class="_talk" id="_talk">
         
             <div class="banner" id="_talk_top" style="padding-left:5px;">
                 <a href="../../../">
-                    <font size="7" color="white"><b style="font-weight:300;">回帖(451)</b></font>
+                    <font size="7" color="white"><b style="font-weight:300;">回帖${count_li-1}</b></font>
                 </a>
             </div>
 
