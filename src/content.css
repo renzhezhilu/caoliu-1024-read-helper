@@ -1,0 +1,118 @@
+div.banner {
+    height: 70px;
+    overflow: hidden;
+}
+
+div.h.guide {
+    height: 16px;
+}
+
+div#header {
+    max-width: 70%;
+    margin: 0;
+}
+
+div#main {
+    max-width: 70%;
+    margin: 0;
+}
+
+tr.tr1 th{
+    min-width: 60px;
+    width: 60px;
+}
+td.tac img {
+    
+}
+
+/* --------------------------------------- */
+body {}
+
+._talk {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    background-color: #f9f9ec;
+    border-left: 1px solid #b1d4e0;
+    width: 30%;
+    height: 100vh;
+    overflow: auto;
+}
+
+.talk_li {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #b1d4e0;
+}
+
+
+.talk_li .pic {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #0F7884;
+    margin: 5px;
+    flex-shrink: 0;
+    font-size: 20px;
+    font-weight: 200;
+    color: #f9f9ec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pic.新 {
+    background-color: rgb(123, 176, 182);
+}
+.pic.騎 {
+    background-color: rgb(53, 118, 125);
+}
+.pic.風 {
+    background-color: rgb(30, 94, 101);
+}
+.pic.俠 {
+    background-color: rgb(19, 93, 101);
+}
+.pic.聖 {
+    background-color: rgb(15, 132, 101);
+}
+.pic.精 {
+    background-color: rgb(15, 154, 133);
+}
+.pic.天 {
+    background-color: rgb(216, 109, 51);
+}
+.talk_li .text {
+    font-size: 15px;
+    line-height: 20px;
+    width: 100%;
+}
+.talk_li .name {
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    font-weight: 200;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.talk_li .name .lou {
+    font-size: 10px;
+}
+
+.talk_li .time {
+    font-size: 12px;
+    line-height: 16px;
+    opacity: .5;
+}
+
+.talk_li {}
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    padding: 20px 0;
+}

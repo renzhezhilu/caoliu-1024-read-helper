@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "草榴1024看帖助手",
+    "description": "看评论再也不需要一页页翻了",
+    "version": "1.0.0",
+    "permissions": [
+        "https://github.com/renzhezhilu/caoliu-1024-read-helper"
+    ],
+    "background": {
+        "persistent": false,
+        "scripts": ["bg.js"]
+    },
+    "browser_action": {
+        "default_popup": "popup/popup.html"
+    },
+    "icons": {
+        "128": "icons/icon_128.png",
+        "48": "icons/icon_48.png"
+    },
+    "optional_permissions": ["http://*/*", "https://*/*", "webNavigation", "tabs"],
+    "content_scripts": [
+        {
+          "run_at": "document_end",
+          "matches": ["http://*/htm_data/*", "https://*/htm_data/*","http://*/read.php*", "https://*/read.php*"],
+          "js": ["content.js"],
+          "css": ["content.css"]
+        }
+      ]
+}
