@@ -4,3 +4,5 @@
 
 ![ds](./other/demo.gif)
 
+## 下载
+https://github.com/renzhezhilu/caoliu-1024-read-helper/releases/tag/1.0.0
