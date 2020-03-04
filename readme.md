@@ -6,5 +6,16 @@
 
 ![ds](./other/demo.gif)
 
-## crx下载
-https://github.com/renzhezhilu/caoliu-1024-read-helper/releases
+## 下载
+https://github.com/renzhezhilu/caoliu-1024-read-helper/releases/download/caoliu-1024-read-helper-v1.0.0/caoliu-1024-read-helper-v1.0.0.zip
+
+## 安装
+00.下载完后解压压缩包
+
+01.打开，`设置` -> `更多工具` -> `扩展程序`
+
+02.打开右上角`开发者模式`
+
+03.点击`加载以解压的扩展程序`并选择刚刚解压的文件夹
+
+04.完成
