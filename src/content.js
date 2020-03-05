@@ -11,7 +11,7 @@ let page_url = {
 }
 let page_data = []
 let _talk_count=0
-let filter_con = ['1024','感谢分享','谢谢分享','多谢分享','支持发帖']
+let filter_con = ['1024','感谢分享','谢谢分享','多谢分享','支持发帖','学习了','学习学习','不错','不错哦']
 let filter_con_count = 0
 ////////////////////////////
 // 获取页面信息
